@@ -7,7 +7,13 @@ import Head from "next/head";
 const name = "Ben Bryant";
 export const siteTitle = "Next.js Starter Blogsite";
 
-export default function Layout({ children, home }) {
+export default function Layout({
+  children,
+  home,
+}: {
+  children: React.ReactNode;
+  home?: boolean;
+}) {
   return (
     <div className={styles.container}>
       <Head>
